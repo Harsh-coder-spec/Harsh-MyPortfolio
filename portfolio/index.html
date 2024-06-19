@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsh</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="topnav" id="nav">
+        <div class="left-cont">
+            Harsh Saini
+        </div>
+        <div class="mukul">
+            <a href="/">Home</a>
+            <a href="/about_me/" target="_blank">About Me</a>
+            <a href="/skills/" target="_blank">Skills</a>
+            <a href="/contact_me/" target="_blank">Contact Me</a>
+            <a href="#" class="icon" onclick="myfunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+    <script>
+        function myfunction() {
+            var x = document.getElementById("nav");
+            if (x.className == "topnav") {
+                x.className += " responsive"
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+
+    <section class="firstSection">
+        <div class="leftSection">Hi, My Name is <span class="purple">Harsh</span>
+            <div>and I am a passionate</div>
+            <span id="element">Web Developer</span><span class="typed-cursor typed-cursor--blink"
+                aria-hidden="true">|</span>
+        </div>
+        <div class="rightSection">
+            <div class="container">
+                <img src="PngItem_1127587.png" alt="Home Image" id="elements">
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <main>
+
+        <hr>
+        <section class="secondsection">
+            <div class="box1">
+                <a href="https://www.linkedin.com/in/harsh-saini-42a690263/" target="_blank" id="linkedin"> <img
+                        src="linkedin-4-48.png" alt=""></a>
+            </div>
+            <div class="box2">
+                <a href="https://github.com/Harsh-coder-spec" target="_blank"><img src="github-9-48.png" alt=""></a>
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Designer', 'Coder', 'Web Developer'],
+            typeSpeed: 50,
+        });
+    </script>
+    <style data-typed-js-cursor-css="true">
+        .typed-cursor {
+            opacity: 1;
+        }
+
+        .typed-cursor.typed-cursor--blink {
+            animation: typedjsBlink 0.7s infinite;
+            -webkit-animation: typedjsBlink 0.7s infinite;
+            animation: typedjsBlink 0.7s infinite;
+        }
+
+        @keyframes typedjsBlink {
+            50% {
+                opacity: 0.0;
+            }
+        }
+
+        @-webkit-keyframes typedjsBlink {
+            0% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+
+</body>
+
+</html>
